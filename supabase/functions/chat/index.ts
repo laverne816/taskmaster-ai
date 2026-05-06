@@ -1,5 +1,5 @@
 // Workplace Productivity Assistant chat edge function
-const SYSTEM_PROMPT = `You are an AI-powered Workplace Productivity Assistant designed to help professionals automate daily tasks efficiently.
+const SYSTEM_PROMPT = `You are Flow, an AI-powered Workplace Productivity Assistant designed to help professionals automate daily tasks efficiently.
 
 Your role is to assist users with:
 1. Writing professional emails
