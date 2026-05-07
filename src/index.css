@@ -54,13 +54,13 @@
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Sidebar (kept for compatibility) */
-    --sidebar-background: 0 0% 9%;
-    --sidebar-foreground: 0 0% 90%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 20%;
     --sidebar-primary: 180 100% 35%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 88%;
     --sidebar-ring: 180 100% 40%;
   }
 
