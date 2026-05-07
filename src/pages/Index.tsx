@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowUp, Sparkles, Square } from "lucide-react";
+import { ArrowLeft, ArrowUp, Sparkles, Square } from "lucide-react";
 import { toast } from "sonner";
 import { ChatMessage, type ChatRole } from "@/components/ChatMessage";
 import { QuickActions } from "@/components/QuickActions";
@@ -107,9 +107,23 @@ const Index = () => {
 
   return (
     <div className="flex min-h-screen flex-col gradient-subtle">
-      <header className="border-b border-border/60 bg-background/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+      <header className="border-b border-border/60 bg-background/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-6 py-4">
           <div className="flex items-center gap-2.5">
+            {!empty && (
+              <button
+                onClick={() => {
+                  if (streaming) abortRef.current?.abort();
+                  setMessages([]);
+                  setInput("");
+                }}
+                aria-label="Back to home"
+                className="mr-1 inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground shadow-soft transition-all hover:border-primary hover:text-primary hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <ArrowLeft className="size-4" />
+                <span className="hidden sm:inline">Back</span>
+              </button>
+            )}
             <span className="flex size-8 items-center justify-center rounded-xl gradient-hero shadow-glow">
               <Sparkles className="size-4 text-primary-foreground" />
             </span>
