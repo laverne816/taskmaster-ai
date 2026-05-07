@@ -11,35 +11,35 @@
 
 @layer base {
   :root {
-    /* Surfaces */
-    --background: 0 0% 7%;            /* #121212 main app background */
-    --foreground: 0 0% 95%;           /* #f2f2f2 primary text */
+    /* Surfaces — light, readable chat panel */
+    --background: 0 0% 98%;           /* #f9f9f9 main app background */
+    --foreground: 0 0% 13%;           /* #212121 primary text */
 
-    --card: 0 0% 12%;                 /* #1f1f1f cards / surfaces */
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 100%;                /* #ffffff chat panel / cards */
+    --card-foreground: 0 0% 0%;       /* #000000 AI message text */
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
 
     /* Brand */
     --primary: 180 100% 35%;          /* #00b3b3 teal */
     --primary-foreground: 0 0% 100%;
     --primary-glow: 180 100% 45%;     /* #00cccc highlight */
 
-    --secondary: 0 0% 16%;            /* slightly lighter than card */
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 95%;            /* light gray surface */
+    --secondary-foreground: 0 0% 20%; /* #333333 user message text */
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 180 100% 40%;           /* teal accent */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 75% 55%;
+    --destructive: 0 75% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 18%;
+    --border: 0 0% 88%;
+    --input: 0 0% 94%;
     --ring: 180 100% 40%;
 
     --radius: 0.875rem;
