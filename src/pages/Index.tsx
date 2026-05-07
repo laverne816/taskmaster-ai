@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowUp, Sparkles, Square } from "lucide-react";
+import { ArrowLeft, ArrowUp, Sparkles, Square } from "lucide-react";
 import { toast } from "sonner";
 import { ChatMessage, type ChatRole } from "@/components/ChatMessage";
 import { QuickActions } from "@/components/QuickActions";
